@@ -58,6 +58,8 @@ public class OAuth2SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		handler.setTokenStore(tokenStore);
 		handler.setRequestFactory(new DefaultOAuth2RequestFactory(clientDetailsService));
 		handler.setClientDetailsService(clientDetailsService);
+		String psw = "xyz123";
+		System.out.println("psw"  + psw );
 		return handler;
 	}
 	
