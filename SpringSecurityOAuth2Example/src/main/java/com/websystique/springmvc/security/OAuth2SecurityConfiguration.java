@@ -37,6 +37,8 @@ public class OAuth2SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.anonymous().disable()
 	  	.authorizeRequests()
 	  	.antMatchers("/oauth/token").permitAll();
+	    String psw = "abc123";
+	    System.out.println("psw="+pws);
     }
 
     @Override
